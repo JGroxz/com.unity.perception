@@ -38,15 +38,17 @@ namespace UnityEngine.Perception.GroundTruth.Labelers
     {
         static Material s_SegmentationMaterial;
         static readonly string k_Description = "Visibility metrics for labeled objects";
+
         static readonly Quaternion[] k_CameraDirections =
         {
             Quaternion.identity,
-            Quaternion.Euler(-90, 0, 0),
-            Quaternion.Euler(90, 0, 0),
-            Quaternion.Euler(0, -90, 0),
-            Quaternion.Euler(0, 90, 0),
-            Quaternion.Euler(0, 180, 0)
+            // Quaternion.Euler(-90, 0, 0),
+            // Quaternion.Euler(90, 0, 0),
+            // Quaternion.Euler(0, -90, 0),
+            // Quaternion.Euler(0, 90, 0),
+            // Quaternion.Euler(0, 180, 0)
         };
+
         static readonly string[] k_CameraDirectionNames =
         {
             "Forward",
